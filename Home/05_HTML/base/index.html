@@ -7,12 +7,92 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="http://fe.it-academy.by/TestForm.php">
-        <fieldset>
-            <legend>Строка поиска</legend>
-            <input type="text" name="text">
-            <input type="submit" value="Искать">
-        </fieldset>
-    </form>
+    <table>
+        <tr>
+            <td>
+                <p><b>Простая форма поиска с вариантами:</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset style="width:700px">
+                        <legend>Строка поиска</legend>
+                        <input type="text" name="text" maxlength="10">
+                        <input type="submit" value="Искать"><br>
+                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked>на сайте
+                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0">в google
+                    </fieldset>
+            </form>
+            </td>
+            <td>
+                <p><b>Простая форма поиска с вариантами:</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset style="width:700px">
+                        <legend>Строка поиска</legend>
+                        <label><input type="text" name="text" required>&nbsp;</label>
+                        <input type="submit" value="Искать"><br>
+                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0">на сайте
+                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0" checked>в google
+                    </fieldset>
+                </form>
+            </td>
+        </tr>  
+        <tr>
+            <td>
+                <p><b>Простая форма авторизации:</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset style="width:700px">
+                        <legend>Авторизируйтесь</legend>
+                        <input type="text" name="text" required>*Логин<br>
+                        <p style="font-size: 5px;"></p>
+                        <input type="text" name="text1" required>*Пароль<br>
+                        <input type="checkbox" name="val_1"> Оставаться в системе<br>
+                        <input type="submit" value="Войти">
+                    </fieldset>
+            </form>
+            </td>
+            <td>
+                <p><b>Опрос(голосование):</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset style="width:700px">
+                        <legend>Как вам?</legend>
+                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked>ничего<br>
+                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0">неплохо<br>
+                        <input type="radio" name="radio_group" value="value_03" id="Checkbox_Group3_0">хорошо<br>
+                        <input type="radio" name="radio_group" value="value_04" id="Checkbox_Group4_0">супер<br>
+                        <input type="hidden" name="date_voite" value="2013.12.31">
+                        <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>    
+        <tr>
+            <td>
+                <p><b>Отзыв:</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                    <fieldset style="width:700px">
+                        <legend>Оставьте Ваш отзыв</legend>
+                        <input type="text" name="text" required>*Имя<br>
+                        <p style="font-size: 5px;"></p>
+                        <input type="text" name="text1" required>*e-mail<br>
+                        <textarea rows="2" cols="15" name="text" placeholder="Форма отправки"></textarea><br>
+
+                        <input type="submit" value="Отправить">
+                    </fieldset>
+            </form>
+            </td>
+            <td>
+                <p><b>Выпадающий и мульти списки:</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset style="width:700px">
+                        <legend>Города РБ</legend>
+                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked>ничего<br>
+                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0">неплохо<br>
+                        <input type="radio" name="radio_group" value="value_03" id="Checkbox_Group3_0">хорошо<br>
+                        <input type="radio" name="radio_group" value="value_04" id="Checkbox_Group4_0">супер<br>
+                        <input type="hidden" name="date_voite" value="2013.12.31">
+                        <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>    
+    </table>
 </body>
 </html>
