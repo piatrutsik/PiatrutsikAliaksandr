@@ -1,0 +1,16 @@
+span.header { 
+    text-align: right;
+}
+p {
+    line-height: 0.3;
+}
+h2 {
+    text-indent: 20px; 
+}
+span.center{
+    font-family: 'Bad Script', cursive;
+}
+p.text {
+    text-indent: 20px;
+    line-height: 1;
+}
