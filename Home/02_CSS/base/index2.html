@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100%;
+        }
+        div.block1{
+           width: 15em; 
+           height : auto;
+           background-color: gray;
+           float: left;
+           border-bottom: 1em solid white;
+           position: absolute;
+           
+        }
+        #block2{
+            left: 16em;
+            width: calc(100% - 16em);
+            height: 15%;
+            background-color: rgb(175, 36, 36);
+            float: left;
+            border-bottom: 1em solid white;
+            position: absolute;
+            margin-bottom: 2em;
+        }
+        #block3{
+            left: 16em;
+            top: calc(15% + 1em );
+            width: calc(100% - 16em);
+            height: calc(100% - 20% - 1em);
+            background-color: rgb(91, 152, 99);
+            float: left;
+            border-bottom: 1em solid white;
+            position: absolute;
+        }
+        div.footer{
+            left: 0px;
+            top: calc(95% + 1em);
+            width: 100%;
+            height: auto;
+            background-color: rgb(180, 61, 61);
+            position: absolute;
+        }
+        .article-header{
+            margin-bottom: 2em;
+        }
+        img{
+            float: right;  
+            width: 100px;
+            height: 100px;
+        }
+        p.line{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="block1">
+        <p>Меню</p>
+        <p>Каталог</p>
+        <p>Акции</p>
+        <p>Доставка</p>
+        <p>Уцененные товары</p>
+        <p>Контакты</p>
+        <p>Сотрудничество</p>
+        <p>О нас</p>
+    </div>
+    <div id="block2" class="article">
+        <h3>Лизинг за 1 рубль!</h3>
+        <p class="article-header">Уважаемые покупатели! Рады сообщить вам о новой возможности – теперь у нас можно оформить товары в лизинг через ЗАО "Авангард Лизинг".</p> 
+    </div>
+    <div id="block3" class="article">
+        
+        <h3>Преимущества лизинга:</h3>
+        <ul>
+            <li class="article-header">Простой порядок оформления документов и согласованное финансирование дает вам возможность начать использовать имущество через 2-3 дня после заключения лизингового договора..</li>
+            <li class="article-header">Оплачивается только часть стоимости имущества – и оно будет передано вам в пользование.</li>
+            <li class="article-header">Договор лизинга не предусматривает залога.</li>
+            <li class="article-header">Положительное решение по сделке может приниматься даже при наличии слабых финансовых показателей у клиента.</li>
+            <li class="article-header">Сроки оплаты лизинговых платежей как правило длиннее, чем сроки погашения банковского кредитования.</li>
+            <li class="article-header">Разработанный индивидуально для вас график погашения лизинговых платежей позволяет вам планировать расходы.</li>
+            <li class="article-header">Лизинговые платежи не облагаются налогом на прибыль и в полной сумме относятся на себестоимость продукции.</li>
+        </ul>
+        <img src="img/почта.jpg">
+    </div>
+    <div class="footer">
+        <p class="line"> EN RU BY LT LV PL UA CZ </p>
+    </div>
+</body>
+</html>
