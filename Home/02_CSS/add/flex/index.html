@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100%;
+        }
+        .wrap{
+        background-color: rgb(39, 22, 173);  
+        display: flex;
+        flex-direction: row;     
+        }
+        div.block1{
+           width: 15em;
+           height: min-content; 
+           background-color: gray;
+        }
+        .for{
+           display: flex;
+           flex-direction: column;
+           margin-bottom: .2em;
+        }
+        #block2{
+            width: calc(100%);
+            background-color: rgb(175, 36, 36);
+            margin-bottom: .2em;
+        }
+        #block3{
+            width: calc(100%);
+            background-color: rgb(91, 152, 99);
+        }
+        div.footer{
+           float: left;
+            width: 100%;
+            height: auto;
+            background-color: rgb(180, 61, 61); 
+        }
+        img{
+            float: right;  
+            width: 100px;
+            height: 100px;
+        }
+        p.line{
+            display: center;
+        }
+        .clear{
+            clear: both;
+        }
+        .non{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="block1">
+            <p>Меню</p>
+            <p>Каталог</p>
+            <p>Акции</p>
+            <p>Доставка</p>
+            <p>Уцененные товары</p>
+            <p>Контакты</p>
+            <p>Сотрудничество</p>
+            <p>О нас</p>
+        </div>
+            <div class="for">
+                <div id="block2" class="article">
+                    <h3>Лизинг за 1 рубль!</h3>
+                    <p class="article-header">Уважаемые покупатели! Рады сообщить вам о новой возможности – теперь у нас можно оформить товары в лизинг через ЗАО "Авангард Лизинг".</p> 
+                </div>
+                <div id="block3" class="article">
+                    <h3>Преимущества лизинга:</h3>
+                    <ul>
+                        <li class="article-header">Простой порядок оформления документов и согласованное финансирование дает вам возможность начать использовать имущество через 2-3 дня после заключения лизингового договора..</li>
+                        <li class="article-header">Оплачивается только часть стоимости имущества – и оно будет передано вам в пользование.</li>
+                        <li class="article-header">Договор лизинга не предусматривает залога.</li>
+                        <li class="article-header">Положительное решение по сделке может приниматься даже при наличии слабых финансовых показателей у клиента.</li>
+                        <li class="article-header">Сроки оплаты лизинговых платежей как правило длиннее, чем сроки погашения банковского кредитования.</li>
+                        <li class="article-header">Разработанный индивидуально для вас график погашения лизинговых платежей позволяет вам планировать расходы.</li>
+                        <li class="article-header">Лизинговые платежи не облагаются налогом на прибыль и в полной сумме относятся на себестоимость продукции.</li>
+                        <li class="article-header">Простой порядок оформления документов и согласованное финансирование дает вам возможность начать использовать имущество через 2-3 дня после заключения лизингового договора..</li>
+                        <li class="article-header">Оплачивается только часть стоимости имущества – и оно будет передано вам в пользование.</li>
+                        <li class="article-header">Договор лизинга не предусматривает залога.</li>
+                        <li class="article-header">Положительное решение по сделке может приниматься даже при наличии слабых финансовых показателей у клиента.</li>
+                        <li class="article-header">Сроки оплаты лизинговых платежей как правило длиннее, чем сроки погашения банковского кредитования.</li>
+                        <li class="article-header">Разработанный индивидуально для вас график погашения лизинговых платежей позволяет вам планировать расходы.</li>
+                        <li class="article-header">Лизинговые платежи не облагаются налогом на прибыль и в полной сумме относятся на себестоимость продукции.</li>
+                    </ul>
+                    <img src="почта.jpg">
+                    <div class="non"></div>
+                </div>
+            </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+        <p class="line"> EN RU BY LT LV PL UA CZ </p>
+    </div>
+</body>
+</html>
