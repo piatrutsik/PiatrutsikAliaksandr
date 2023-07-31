@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+        }
+        .line{
+            width: 150px;
+            background-color:darkgrey;
+            border: solid black 1px;
+            border-radius: 4px;
+            position: relative;
+            cursor: pointer;
+            
+        }
+        .drop{
+            width: 150px; display: none;
+        }
+        .line:hover > div.drop  { display: block; 
+            position: absolute;
+            top: 90%; 
+            background-color:darkgrey;
+            border: solid black 1px;
+            border-radius: 4px;
+        }
+        .line:hover {
+            background-color: grey;
+        }
+        @media all and (max-width: 680px){
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            div{
+            display: flex;
+            flex-direction: column;
+            }
+            .line{
+                width: 150px;
+                background-color:darkgrey;
+                border: solid black 1px;
+                border-radius: 4px;
+                position: relative;
+                cursor: pointer;
+            }
+            .drop{
+                width: 150px; display: none;
+            }
+            .line:hover > div.drop  { display: block; 
+                top: 10%;
+                left: 100%; 
+                background-color:darkgrey;
+                border: solid black 1px;
+                border-radius: 4px;
+            }
+            .line:hover {
+                background-color: grey;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="line">Понедельник
+            <div class="drop">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="line">Вторник
+            <div class="drop">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="line">Среда
+            <div class="drop">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="line">Четверг
+            <div class="drop">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="line">Пятница
+            <div class="drop">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="line">Суббота
+            <div class="drop">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
