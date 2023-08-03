@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 800px;
+            height: 800px;
+            border: 4px solid black;
+            counter-reset: heading 65;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            float: left;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       .square:before{
+        content: counter(heading);
+        counter-increment: heading -1; 
+        font-size: 50px;
+        }
+        .square:nth-child(-n+8):nth-child(even) {
+        background-color: white;
+        color: black;
+       }
+       .square:nth-child(n+9):nth-child(-n+16):nth-child(odd) {
+        background-color: white;
+        color: black;
+       }
+       .square:nth-child(n+17):nth-child(-n+24):nth-child(even) {
+        background-color: white;
+        color: black;
+       }
+       .square:nth-child(n+25):nth-child(-n+32):nth-child(odd) {
+        background-color: white;
+        color: black;
+       }
+       .square:nth-child(n+33):nth-child(-n+40):nth-child(even) {
+        background-color: white;
+       }
+       .square:nth-child(n+41):nth-child(-n+48):nth-child(odd) {
+        background-color: white;
+        color: black;
+       }
+       .square:nth-child(n+49):nth-child(-n+56):nth-child(even) {
+        background-color: white;
+        color: black;
+       }
+       .square:nth-child(n+57):nth-child(-n+64):nth-child(odd) {
+        background-color: white;
+        color: black;
+       }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>

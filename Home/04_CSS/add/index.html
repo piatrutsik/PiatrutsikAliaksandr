@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 600px;
+            border: 1px solid black; /* Рамка вокруг таблицы */
+            border-collapse: collapse; /* Отображать только одинарные линии */
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        p{
+            margin: 0;
+        }
+        #word::after {
+            visibility: hidden; 
+        }
+        #word:hover::after {
+            visibility: visible;
+            content: url(img/word.jpg);
+        }
+        #pdf::after {
+            visibility: hidden; 
+        }
+        #pdf:hover::after {
+            visibility: visible;
+            content: url(img/pdf.png);
+        }
+        #zip::after {
+            visibility: hidden; 
+        }
+        #zip:hover::after {
+            visibility: visible;
+            content: url(img/zip.gif);
+        }
+        a[href$='.doc']::before{
+            content: url(img/doc.png);
+        }
+        a[href$='_Format']::before{
+            content: url(img/doc.png);
+        }
+        a[href$='ZIP']::before{
+            content: url(img/doc.png);
+        }
+        a[href$='.docx']::after{
+            content: url(img/word.jpg);
+        }
+        a[href$='.pdf']::after{
+            content: url(img/pdf.png);
+        }
+        a[href$='.zip']::after{
+            content: url(img/zip.gif);
+        }
+        #word::before{
+            content: url(img/list.jpg);
+        }
+        #pdf::before{
+            content: url(img/list.jpg);
+        }
+        #zip::before{
+            content: url(img/list.jpg);
+        }
+
+</style>
+</head>
+<body>
+    <h2>Формат файлов.</h2>
+    <div>
+        <p>.DОС или .dос (от англ.<a href="https://ru.wikipedia.org/wiki/.doc">document</a> ) - расширение имени файла, исползуемое для файлов,
+            представляющих текст, с разметкой или без. Расширение .DОС часто использовалось для
+            обозначения простых текстовых файлов без формирования, однако позже стало
+            использоваться для двоичных форматов с разметкой.<br>
+            <a href="img/New.docx">Документ MS Word</a>
+        </p>
+    </div>
+    <div>
+        <p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/Portable_Document_Format">PDF</a>) - межплатформенный формат электронных документов,
+            разработанный фирмой Abode Systems с использованием ряда возможностей языка
+            Розвспрг.<br>
+            <a href="img/Newpdf.pdf">Документ PDF</a>
+        </p>
+    </div>
+    <div>
+        <p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате
+            обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/ZIP">.zip</a> и хранит в сжатом или несжатом виде один или несколько
+            файлов, которое можно из него извлечь путем распаковки с помощью специальной
+            программы.<br>
+            <a href="img/book.zip">Aрхив</a>
+        </p>
+    </div>
+    <div></div>
+    <h3>Это список файлов</h3>
+    <a class="imagetip" href="img/New.docx" id="word">Документ MS Word</a><br> 
+    <a class="imagetip" href="img/Newpdf.pdf" id="pdf">Документ PDF</a><br>
+    <a class="imagetip" href="img/book.zip" id="zip">Aрхив</a>
+</body>
+</html>
